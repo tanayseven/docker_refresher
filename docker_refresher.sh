@@ -2,7 +2,7 @@
 # - Container
 # - Image
 # - Volume
-# - Netowork
+# - Network
 
 # Docker help with getting a list of commands
 docker
@@ -55,3 +55,16 @@ docker image build . --tag static_website:0.0.1 -p
 
 # Run the container for the image that is just built
 docker container run -d --name static_website -p 4000:80 static_website:0.0.1 
+
+# Pushing the tagged image to Dockerhub
+docker login
+docker image tag static_website:0.0.1 tanayseven/static_website:0.0.1
+
+# Kill it and delete it
+docker container stop static_website && docker container rm static_website
+
+# Building multistage container build and prod (--target)
+cd 02_react_app
+docker image build . --target test --tag speedy_math_test
+docker image build . --target build --tag speedy_math_build
+docker image build . --target prod --tag speedy_math

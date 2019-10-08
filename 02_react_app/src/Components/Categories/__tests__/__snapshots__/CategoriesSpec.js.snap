@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories renders correctly 1`] = `
+<div
+  className="Categories__Wrapper"
+>
+  <header
+    className="Header"
+  >
+    <div
+      className="App__Logo"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Speedy Math
+      </a>
+    </div>
+  </header>
+  <ul
+    className="Categories"
+  >
+    <li
+      className="Wood"
+    >
+      <a
+        href="/add"
+        onClick={[Function]}
+      >
+        Addition
+      </a>
+    </li>
+    <li
+      className="Wood"
+    >
+      <a
+        href="/sub"
+        onClick={[Function]}
+      >
+        Subtraction
+      </a>
+    </li>
+    <li
+      className="Wood"
+    >
+      <a
+        href="/multiply"
+        onClick={[Function]}
+      >
+        Multiply
+      </a>
+    </li>
+    <li
+      className="Wood"
+    >
+      <a
+        href="/comparison"
+        onClick={[Function]}
+      >
+        Comparison
+      </a>
+    </li>
+  </ul>
+</div>
+`;
